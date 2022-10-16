@@ -1,3 +1,22 @@
+
+cd src/main
+go mod init
+
+go get -u github.com/sirupsen/logrus
+go get -u github.com/timest/gomanuf
+go get -u github.com/google/gopacket
+
+export GO111MODULE=off
+go get github.com/sirupsen/logrus
+
+# build
+$ go build
+
+# execute
+$ sudo ./main
+# or
+$ sudo ./main -I en0
+
 # goscan
 
 ![image](https://user-images.githubusercontent.com/1621058/32154543-63c4e560-bcff-11e7-8a92-5281e18f221e.png)
@@ -22,7 +41,7 @@
 
 ```sh
 # install dependencies
-$ go get github.com/Sirupsen/logrus
+$ go get  github.com/Sirupsen/logrus
 $ go get github.com/timest/gomanuf
 $ go get github.com/google/gopacket
 
